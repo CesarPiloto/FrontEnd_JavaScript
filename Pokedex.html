@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./estilo_pokedex.css">
+</head>
+<header>
+<img src="./poke1.png" alt="logo" width="150px">
+<img src="./poke2.png" alt="logo2" width="20%">
+</header>
+<body>
+    <div class="rejilla_pokedex">
+        <div class="seccion_pokedex"><div class="circulo1"></div></div>
+        <div class="seccion_pokedex2"></div>
+        <div class="circulo2"></div>
+        <div class="circulo3"></div>
+        <div class="circulo4"></div>
+        <div class="seccion_pokedex3"></div>
+        <div class="seccion_pokedex4"></div>
+        <div class="seccion_pokedex5"></div>
+        <div class="seccion_imagen"></div>
+        <div class="seccion_imagen2">
+            <img class="imagen_pokemon" src="./pokeball.png" alt="Pokemon" id="pokeImg">
+        </div>
+        <input class="entrada_texto" type="text" placeholder="Buscar por nombre o #id" id="pokeName" name="pokeName">
+        <button class="button" onclick="fetchPokemon()"></button>
+        <div class="seccion_separacion"></div>
+        <div class="seccion_pokedex6"></div>
+        <div class="seccion_pokedex7"></div>
+        <div class="seccion_imagen4"><h3></h3></div>
+        <div class="seccion_imagen3">
+            <p class="nombre" id="name"></p>
+            <h3 class="texto" id="tipo"></h3>
+            <p class="texto" id="hp"></p>
+            <p class="texto" id="attack"></p>
+            <p class="texto" id="defense"></p>
+            <p class="texto" id="special_attack"></p>
+            <p class="texto" id="special_defense"></p>
+            <h3 class="texto" id="speed"></h3>
+        </div>
+        <div class="area_texto">
+            <textarea name="movimiento" id="movimiento" class="texto" cols="20" rows="5" readonly></textarea>
+        </div>
+    </div>
+    <br>
+</body>
+<footer>
+    <h2>Desarrollado por César Piloto</h2>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
